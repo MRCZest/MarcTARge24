@@ -3,48 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waterfall arendusmudel</title>
+    <title>Spiraal arendusmudel</title>
 </head>
 <body>
  <p>
     <a href="../index.html" style="font-size: 20px;">Tagasiminek</a>
-    <h1>Waterfall</h1>
-    <p>Waterfall on kõige vanem ja kõige rohkem kritiseeritud protsessimudel. Mudeli kirjeldas Winston W. Royce 1970. aastal. Põhimõte on mudelil see, et tegevus toimuks jadamisi eraldi etappidena. Royce jagas etapid järgmisteks:</p>
-    <h2>Nõuete määratlemine</h2>
-    <p>Jaotatud kaheks - süsteemi analüüs (kõik see, mis konkreetset tarkvara ümbritseb) ja nõuete analüüs. Dokumenteeritakse süsteemi käitumist, jõudlust, liidest jne</p>
-    <h2>Süsteemi ja tarkvara kavandamine</h2>
-    <p>Keskendub põhilistele programmi omadustele nagu andmestruktuurid, tarkvara arhitektuur, liideste omadused ja protseduurilised ning algoritmilised detailid. Projekti kvaliteeti on võimalik hinnata. Tulemus dokumenteeritakse.</p>
-    <h2>Teostus ja moodulite testimine</h2>
-    <p>Projektis kirjeldatud süsteem programmeeritakse moodulite ja programmide kogumina ja need testitakse eraldi. Mida detailsem on projekt, seda lihtsam ja mehhaanilisem saab olla teostuse etapp. </p>
-    <h2>Integratsioon ja süsteemi testimine</h2>
-    <p>Programmid ja moodulid integreeritakse ning testitakse kogu süsteemi, peale testimist antakse toode kliendile. Testimisel keskendutakse nii loogilistele detailidele kui ka sellele, kas süsteem oma funktsionaalsuse osas nõudeid täidab</p>
-    <h2>Kasutamine ja hooldus</h2>
-    <p>Tavaliselt kõige pikem faas. Süsteemi muudetakse, kui kasutajad avastavad vigu, ümbrus ja töökeskkond muutuvad või klient vajab uut funktsionaalsust. Faas kordab kõiki eelnevaid faase olemasoleva süsteemi muutmise raames</p>
-    <br/>
-    <img src="../pildid/waterfall.jpeg" alt="">
+    <h1>Spiraalmudel</h1>
+    <p>Spiraalmudel on iteratiivne tarkvaraarendusmudel, mille kirjeldas esimest korda Barry Boehm 1986. aastal. Mudeli arendusprotsessi kujutab spiraal, mille iga kordus keskendub konkreetsele arendusaspektile.</p>
+    <h2>Tegevuste käik</h2>
+    <ul>
+        <li>
+            <h3>Eesmärkide seadmine</h3>
+            <p>Iga kordus algab eesmärkide, piirangute, tulemite ja juhtimisplaani määratlemisega. Samuti tuvastatakse võimalikud riskid ja koostatakse strateegiad nende maandamiseks.</p>
+        </li>
+        <li>
+            <h3>Riskide hindamine ja maandamine</h3>
+            <p>Selle etapi eesmärk on analüüsida tuvastatud riske ning leida viise nende maandamiseks, näiteks prototüüpide loomine, kui nõuded on ebamäärased.</p>
+        </li>
+        <li>
+            <h3>Arendus ja valideerimine</h3>
+            <p>Arendamiseks valitakse mudel, mis sobib kõige paremini riskide vähendamiseks. Näiteks suurte riskidega kasutajaliidese puhul võib abiks olla prototüüpide loomine.</p>
+        </li>
+        <li>
+            <h3>Planeerimine</h3>
+            <p>Iga korduse lõpus hinnatakse projekti edenemist ja tehakse otsus, kas minna edasi järgmise kordusega. Kui otsustatakse jätkata, koostatakse järgmise faasi plaan.</p>
+        </li>
+    </ul>
+    <img src="../pildid/spiraal.jpg" alt="">
     <table>
         <tr>
             <td><b>Head</b></td>
             <td><b>Vead</b></td>
         </tr>
         <tr>
-            <td>Mudelil on kindel struktuur</td>
-            <td>Muutusi on keeruline läbi viia</td>
+            <td>Tarkvara valmib varajases etapis tarkvara elutsüklis.</td>
+            <td>Ei sobi väikestele projektidele, kuna on kulukas.</td>
             <tr>
-                <td>Määrab varakult lõppeesmärgi</td>
-                <td>Projekti kestus on pikem</td>
+                <td>Tugev heakskiidu ja dokumentatsiooni kontroll.</td>
+                <td>On oluliselt keerukam kui teised SDLC mudelid.</td>
             </tr>
                 <tr>
-                    <td>Edastab hästi teavet</td>
-                    <td>Klient võib projekti jooksul meelt muuta</td>
+                    <td>Sobib kõrge riskiga projektidele, kus ärivajadused võivad olla ebastabiilsed.</td>
+                    <td>Spiraal võib jätkuda määramatult.</td>
                 </tr>
         </tr>
     </table>
     <br/>
-    <a href="https://www.lucidchart.com/blog/pros-and-cons-of-waterfall-methodology">Siit sain info heade ja halbade külgede kohta</a>
+    <a href="https://www.geeksforgeeks.org/advantages-and-disadvantages-of-using-spiral-model/">Siit sain info heade ja halbade külgede kohta</a>
     <br/>
     <br/>
-    <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html">Siit sain info Waterfall mudeli kontseptsiooni kohta</a>
+    <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1223_spiraalmudel.html">Siit sain info Spiraal mudeli kontseptsiooni kohta</a>
  </p>
 </body>
 </html>
