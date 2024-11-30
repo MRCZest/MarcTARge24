@@ -1,42 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uppercase vahendid</title>
+    <title>Uppercase Vahendid</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+     a[style="font-size: 20px;"] {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <p>
-        <a href="../index.html" style="font-size: 20px;">Tagasi avalehele</a>
-        <br>
-        <br>
-        <a href="../casevahendid/main.html" style="font-size: 20px;">Tagasi</a>
-        <h1>Uppercase vahendid</h1>
-        <p>Upper CASE tööriistad on spetsiaalselt loodud tarkvaraarenduse algfaasi toetamiseks. Need tööriistad aitavad määratleda ja kavandada tarkvarasüsteemi struktuuri ning nõudeid enne arenduse alustamist. Üks tähtsamaid omadusi on, et need pakuvad täpset dokumentatsiooni ja toetavad süsteemi disaini loomist, et tagada tarkvara hilisem töötamine ja arendamine.</p>
 
-        <h2>Milliseid vahendeid olen juba kasutanud</h2>
-        <p>Olen ise kasutanud järgmisi Upper CASE tööriistu:</p>
-        <ul>
-            <li>Lucidchart: Visuaalne tööriist, mis aitab luua süsteemi diagramme ja andmestruktuure, aidates mõista ja visualiseerida tarkvara arhitektuuri.</li>
-            <li>Enterprise Architect: Tööriist, mida kasutan tarkvara arhitektuuri ja nõuete haldamiseks, toetab UML diagramme ja prototüüpide loomist.</li>
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="../../index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="../../index.html" class="navbarLinks">Minust</a>
+            </li>
+            <p class="navbarItemSeperator">|</p>
+            <div class="navbarItem">
+                <div class="navbarDropdown">
+                    <a href="../konspektid.html" class="navbarLinks">Konspektid</a>
+                    <div class="navbarDropdownLinks">
+                        <a href="TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                        <a href="casevahendid/main.html" class="navbarDropdownLink">Riistvara</a>
+                        <a href="TAindex.html" class="navbarDropdownLink">Programmeerimise alused</a>
+                    </div>
+                </div>
+            </div>
+            <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="../../tööd/tööd.html" class="navbarLinks">Tööd</a>
+            </li>
         </ul>
-
+    </nav>
+    <main class="main-container">
+        <a href="../casevahendid/main.html" style="font-size: 20px;">Tagasiminek</a>
+        <h1>Uppercase  Vahendid</h1>
         <h2>2 näidet Uppercase vahenditest, mida veel ei ole kasutanud</h2>
 
         <h3>1. Näide: IBM Rational Rose</h3>
-        <img src="../pildid/rational_rose_logo.png" alt="IBM Rational Rose Logo" width="200" />
-        <p>IBM Rational Rose on üks juhtivaid CASE tööriistu, mida kasutatakse tarkvara analüüsiks ja disainiks. Seda kasutatakse peamiselt objektorienteeritud analüüsi ja disaini jaoks, toetades UML diagramme ja muud arhitektuuride loomist.</p>
-        <p>Mis saab teha: Tööriista abil saab luua visuaalseid mudeleid, nagu klassidiagrammid, järjestuse diagrammid ja tegevusdiagrammid, et dokumenteerida ja analüüsida tarkvara struktuuri enne arendamist. See aitab tagada, et süsteemide arhitektuur on õigesti kavandatud.</p>
-        <img src="../pildid/ibm_rational_rose_screenshot.png" alt="IBM Rational Rose Screenshot" width="600" />
+        <div class="img-container">
+            <img src="../pildid/rational_rose_logo.png" alt="IBM Rational Rose Logo" width="200" />
+        </div>
+        <p>
+            IBM Rational Rose on üks juhtivaid CASE tööriistu, mida kasutatakse tarkvara analüüsiks ja disainiks. Seda kasutatakse peamiselt objektorienteeritud analüüsi ja disaini jaoks, toetades UML diagramme ja muud arhitektuuride loomist.
+        </p>
+        <p>
+            Mis saab teha: Tööriista abil saab luua visuaalseid mudeleid, nagu klassidiagrammid, järjestuse diagrammid ja tegevusdiagrammid, et dokumenteerida ja analüüsida tarkvara struktuuri enne arendamist. See aitab tagada, et süsteemide arhitektuur on õigesti kavandatud.
+        </p>
+        <div class="img-container">
+            <img src="../pildid/ibm_rational_rose_screenshot.png" alt="IBM Rational Rose Screenshot" width="600" />
+        </div>
 
         <h3>2. Näide: Microsoft Visio</h3>
-        <img src="../pildid/visio_logo.png" alt="Microsoft Visio Logo" width="200" />
-        <p>Microsoft Visio on diagrammitöötlusprogramm, mida kasutatakse süsteemi arhitektuuri ja protsesside modelleerimiseks. Visio on suurepärane tööriist, et luua andmestruktuuride, töövoogude ja tarkvarasüsteemide visuaalseid mudeleid.</p>
-        <p>Mis saab teha: Visio võimaldab kasutajatel luua erinevaid diagramme, sealhulgas andmebaasi ja äriprotsesside diagramme, samuti UML ja ERD (Entity Relationship Diagram) mudeleid. See on kasulik tööriist, et visualiseerida, kuidas süsteemid töötavad ja millised komponendid neid moodustavad.</p>
-        <img src="../pildid/visio_screenshot.png" alt="Microsoft Visio Screenshot" width="600" />
-    </p>
-    <p>IBM Rational Rose kohta leidsin infot <a href="https://en.wikipedia.org/wiki/IBM_Rational_Rose">siit</a></p>
-    <p>Microsoft Visio kohta leidsin infot <a href="https://en.wikipedia.org/wiki/Microsoft_Visio">siit</a></p>
-    <p>Uppercase vahendite kohta leidsin infot <a href="https://www.umsl.edu/~sauterv/analysis/F08papers/View.html#:~:text=An%20upper%20CASE%20tool%20(front,as%20code%20generation%20and%20testing.">siit</a></p>
+        <div class="img-container">
+            <img src="../pildid/visio_logo.png" alt="Microsoft Visio Logo" width="200" />
+        </div>
+        <p>
+            Microsoft Visio on diagrammitöötlusprogramm, mida kasutatakse süsteemi arhitektuuri ja protsesside modelleerimiseks. Visio on suurepärane tööriist, et luua andmestruktuuride, töövoogude ja tarkvarasüsteemide visuaalseid mudeleid.
+        </p>
+        <p>
+            Mis saab teha: Visio võimaldab kasutajatel luua erinevaid diagramme, sealhulgas andmebaasi ja äriprotsesside diagramme, samuti UML ja ERD (Entity Relationship Diagram) mudeleid. See on kasulik tööriist, et visualiseerida, kuidas süsteemid töötavad ja millised komponendid neid moodustavad.
+        </p>
+        <div class="img-container">
+            <img src="../pildid/visio_screenshot.png" alt="Microsoft Visio Screenshot" width="600" />
+        </div>
+        
+        <p>IBM Rational Rose kohta leidsin infot <a href="https://en.wikipedia.org/wiki/IBM_Rational_Rose" target="_blank" class="modelLink" >siit</a></p>
+        <p>Microsoft Visio kohta leidsin infot <a href="https://en.wikipedia.org/wiki/Microsoft_Visio" target="_blank" class="modelLink">siit</a></p>
+        <p>Uppercase vahendite kohta leidsin infot <a href="https://www.umsl.edu/~sauterv/analysis/F08papers/View.html#:~:text=An%20upper%20CASE%20tool%20(front,as%20code%20generation%20and%20testing." target="_blank" class="modelLink">siit</a></p>
+    </main>
+
 </body>
 </html>

@@ -172,3 +172,31 @@ h1 {
 .modelLink:hover {
     color: #0056a3;
 }
+
+.case-tools-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+.case-tools-list li {
+    margin-bottom: 15px;
+}
+
+.case-link {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.case-link:hover {
+    text-decoration: underline;
+}
+
+.case-description {
+    display: block;
+    font-size: 0.95rem;
+    margin-top: 5px;
+    color: #555;
+}
