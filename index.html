@@ -4,45 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minu tarkvara Arendusprotsessi Ainemapp</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="navbarContainer">
+                <a href="index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="index.html" class="navbarLinks">Minust</a>
+            </li>
+                <p class="navbarItemSeperator">|</p>
+                <li class="navbarItem">
+                    <!-- Make Konspektid unclickable by not linking it, but keeping it a block element for the dropdown -->
+                    <div class="navbarDropdown">
+                        <span class="navbarLinks">Konspektid</span>
+                        <div class="navbarDropdownLinks">
+                            <a href="konspektid/riistvara.html" class="navbarDropdownLink">Riistvara</a>
+                            <a href="konspektid/tarkvara arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                            <a href="konspektid/programmerimise-alused.html" class="navbarDropdownLink">Programmerimise alused</a>
+                        </div>
+                    </div>
+                </li>
+                <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="tööd/tööd.html" class="navbarLinks">Tööd</a>
+            </li>
+        </ul>
+    </nav>
+    
     <h1>Tarkvara Arendusprotsessi Tehtud tööde Konspekt</h1>
     <ul>
-        <li> <a href="casevahendid/main.html">Casevahendid</a></li>
-        <br>
-        <br>
-         <li> <a href="elutsykkel/waterfall.html">Waterfall arendusmudel</a> </li>
-         <li> <a href="elutsykkel/incremental.html">Inkrementaalne arendusmudel</a> </li>
-         <li> <a href="elutsykkel/spiraal.html">Spiraal arendusmudel</a> </li>
-         <li> <a href="elutsykkel/prorotyypimine.html">Prototüüpimine</a> </li>
-         <li> <a href="elutsykkel/agile.html">Agile mudel</a></li>
-         <li> <a href="elutsykkel/bigbang.html">Big Bang mudel</a></li>
-         <li> <a href="elutsykkel/DevOps.html">DevOps mudel</a></li>
-         <li> <a href="elutsykkel/extremeprogramming.html">Extreme Programming mudel</a></li>
-         <li> <a href="elutsykkel/V-model.html">V-Model mudel</a></li>
-
+        <li><a href="casevahendid/main.html">Casevahendid</a></li>
+        <br><br>
+        <li><a href="elutsykkel/waterfall.html">Waterfall arendusmudel</a></li>
+        <li><a href="elutsykkel/incremental.html">Inkrementaalne arendusmudel</a></li>
+        <li><a href="elutsykkel/spiraal.html">Spiraal arendusmudel</a></li>
+        <li><a href="elutsykkel/prorotyypimine.html">Prototüüpimine</a></li>
+        <li><a href="elutsykkel/agile.html">Agile mudel</a></li>
+        <li><a href="elutsykkel/bigbang.html">Big Bang mudel</a></li>
+        <li><a href="elutsykkel/DevOps.html">DevOps mudel</a></li>
+        <li><a href="elutsykkel/extremeprogramming.html">Extreme Programming mudel</a></li>
+        <li><a href="elutsykkel/V-model.html">V-Model mudel</a></li>
     </ul>
-    <br/>
-    ----------------------------------------------------------
-        <h2>Minust</h2>
-        <table border="1" cellpadding="10">
-            <tr>
-                <td>Nimi</td>
-                <td>Mida teen</td>
-                <td>Kust tulen</td>
-                <td>Pilt</td>
-            </tr>
-            <tr>
-                <td>Marcus Grünberg</td>
-                <td>Õpin tarkvaraarendajaks</td>
-                <td>Kiisalt</td>
-                <td> <img src="https://preview.redd.it/strongest-character-that-subaman-can-beat-v0-axtxt8tdckud1.jpeg?auto=webp&s=254e0ae52b8bfb9cad6bedeb7738cc511a0f51c7" alt="" style="width: 100px; height: auto;"></td>
-            </tr>
-            <tr>
-                <td colspan="4" style="text-align: center;">
-                    <a href="https://github.com/MRCZest" target="_blank">Siin on minu Githubi profiil</a>
-                </td>
-            </tr>
-        </table>
+    
+    <h2>Minust</h2>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>Nimi</td>
+            <td>Mida teen</td>
+            <td>Kust tulen</td>
+            <td>Pilt</td>
+        </tr>
+        <tr>
+            <td>Marcus Grünberg</td>
+            <td>Õpin tarkvaraarendajaks</td>
+            <td>Kiisalt</td>
+            <td><img src="https://preview.redd.it/strongest-character-that-subaman-can-beat-v0-axtxt8tdckud1.jpeg?auto=webp&s=254e0ae52b8bfb9cad6bedeb7738cc511a0f51c7" alt="" style="width: 100px; height: auto;"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center;">
+                <a href="https://github.com/MRCZest" target="_blank">Siin on minu Githubi profiil</a>
+            </td>
+        </tr>
+    </table>
+    
+    <footer class="footer"></footer>
 </body>
 </html>

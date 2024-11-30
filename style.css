@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #0078d4;
+    color: #fff;
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d4;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar a, .navbar span {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover, .navbar span:hover {
+    color: #f4f4f9;
+}
+
+/* Dropdown Menu */
+.navbar li {
+    position: relative;
+}
+
+.navbarDropdown {
+    position: relative;
+}
+
+.navbarLinks {
+    display: block;
+    padding: 10px 15px;
+    background-color: #0078d4;
+    border-radius: 4px;
+}
+
+.navbarDropdownLinks {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%; /* Align below the parent menu item */
+    left: 0;
+    background-color: #0056a3;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.navbarDropdownLinks a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 0.9em;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbarDropdownLinks a:hover {
+    background-color: #004080;
+}
+
+/* Show dropdown on hover */
+.navbarDropdown:hover .navbarDropdownLinks {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0078d4;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #0056a3;
+}
+
+hr {
+    margin: 40px auto;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+h2 {
+    text-align: center;
+    color: #0078d4;
+    margin-top: 40px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table td, table th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table td img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.github-link {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.github-link a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.github-link a:hover {
+    color: #0056a3;
+}
