@@ -3,63 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waterfall arendusmudel</title>
+    <title>Waterfall Development Model</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .modelLink {
+            font-size: 20px;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding for a bigger clickable area */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        .modelLink:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
 </head>
 <body>
- <p>
-    <a href="../index.html" style="font-size: 20px;">Tagasiminek</a>
-    <h1>Waterfall</h1>
-    <p>Waterfall on kõige vanem ja kõige rohkem kritiseeritud protsessimudel. Mudeli kirjeldas Winston W. Royce 1970. aastal. Põhimõte on mudelil see, et tegevus toimuks jadamisi eraldi etappidena. Royce jagas etapid järgmisteks:</p>
-    <ul>
-        <li>
-            <h3>Nõuete määratlemine</h3>
-            <p>Jaotatud kaheks - süsteemi analüüs (kõik see, mis konkreetset tarkvara ümbritseb) ja nõuete analüüs. Dokumenteeritakse süsteemi käitumist, jõudlust, liidest jne</p>
-        </li>
-        <li>
-            <h3>Süsteemi ja tarkvara kavandamine</h3>
-            <p>Keskendub põhilistele programmi omadustele nagu andmestruktuurid, tarkvara arhitektuur, liideste omadused ja protseduurilised ning algoritmilised detailid. Projekti kvaliteeti on võimalik hinnata. Tulemus dokumenteeritakse.</p>
-        </li>
-        <li>
-            <h3>Teostus ja moodulite testimine</h3>
-            <p>Projektis kirjeldatud süsteem programmeeritakse moodulite ja programmide kogumina ja need testitakse eraldi. Mida detailsem on projekt, seda lihtsam ja mehhaanilisem saab olla teostuse etapp.</p>
-        </li>
-        <li>
-            <h3>Integratsioon ja süsteemi testimine</h3>
-            <p>Programmid ja moodulid integreeritakse ning testitakse kogu süsteemi, peale testimist antakse toode kliendile. Testimisel keskendutakse nii loogilistele detailidele kui ka sellele, kas süsteem oma funktsionaalsuse osas nõudeid täidab</p>
-        </li>
-        <li>
-            <h3>Kasutamine ja hooldus</h3>
-            <p>Tavaliselt kõige pikem faas. Süsteemi muudetakse, kui kasutajad avastavad vigu, ümbrus ja töökeskkond muutuvad või klient vajab uut funktsionaalsust. Faas kordab kõiki eelnevaid faase olemasoleva süsteemi muutmise raames</p>
-        </li>
-    </ul>
-    <img src="../pildid/waterfall.jpeg" alt="">
-    <table border="1" cellpadding="8">
-        <thead>
-            <tr>
-                <th style="background-color: beige;">Head</th>
-                <th style="background-color: beige;">Vead</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Mudelil on kindel struktuur</td>
-                <td>Muutusi on keeruline läbi viia</td>
-            </tr>
-            <tr>
-                <td>Määrab varakult lõppeesmärgi</td>
-                <td>Projekti kestus on pikem</td>
-            </tr>
-            <tr>
-                <td>Edastab hästi teavet</td>
-                <td>Klient võib projekti jooksul meelt muuta</td>
-            </tr>
-        </tbody>
-    </table>
-    <br/>
-    <a href="https://www.lucidchart.com/blog/pros-and-cons-of-waterfall-methodology">Siit sain info heade ja halbade külgede kohta</a>
-    <br/>
-    <br/>
-    <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html">Siit sain info Waterfall mudeli kontseptsiooni kohta</a>
- </p>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="../../index.html" class="nimi">Marcus Grünberg</a>
+        </div>
+
+        <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="../../index.html" class="navbarLinks">Minust</a>
+            </li>
+            <p class="navbarItemSeperator">|</p>
+            <div class="navbarItem">
+                <div class="navbarDropdown">
+                    <a href="../konspektid.html" class="navbarLinks">Konspektid</a>
+                    <div class="navbarDropdownLinks">
+                        <a href="TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
+                        <a href="casevahendid/main.html" class="navbarDropdownLink">Riistvara</a>
+                        <a href="TAindex.html" class="navbarDropdownLink">Programmeerimise alused</a>
+                    </div>
+                </div>
+            </div>
+            <p class="navbarItemSeperator">|</p>
+            <li class="navbarItem">
+                <a href="../../tööd/tööd.html" class="navbarLinks">Tööd</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="mainContent">
+        <a href="../elutsykkel/elutsykkel.index.html" class="modelLink">Tagasiminek</a>
+
+        <h1>Waterfall</h1>
+
+        <p>Waterfall is the oldest and most criticized process model. It was described by Winston W. Royce in 1970. The principle of this model is that activities take place sequentially in separate stages. Royce divided the stages as follows:</p>
+
+        <section>
+            <h2>Process Stages</h2>
+            <ul>
+                <li>
+                    <h3>Requirement Definition</h3>
+                    <p>Divided into two parts: system analysis (everything surrounding the specific software) and requirements analysis. The behavior, performance, interfaces, etc., of the system are documented.</p>
+                </li>
+                <li>
+                    <h3>System and Software Design</h3>
+                    <p>Focuses on key program features like data structures, software architecture, interface specifications, and procedural and algorithmic details. The project's quality can be assessed. The result is documented.</p>
+                </li>
+                <li>
+                    <h3>Implementation and Module Testing</h3>
+                    <p>The system described in the project is programmed as a set of modules and programs, which are tested separately. The more detailed the project, the easier and more mechanical the implementation stage can be.</p>
+                </li>
+                <li>
+                    <h3>Integration and System Testing</h3>
+                    <p>Programs and modules are integrated and tested as a whole system. After testing, the product is delivered to the client. The testing focuses on logical details and whether the system meets functional requirements.</p>
+                </li>
+                <li>
+                    <h3>Usage and Maintenance</h3>
+                    <p>This is usually the longest phase. The system is modified as users discover bugs, the environment and working conditions change, or the client requires new functionality. This phase repeats all previous phases in the context of changing an existing system.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Image and Table</h2>
+            <img src="../pildid/waterfall.jpeg" alt="Waterfall model" style="max-width: 100%; height: auto;">
+            <table border="1" cellpadding="8" style="margin-top: 20px; width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="background-color: beige;">Pros</th>
+                        <th style="background-color: beige;">Cons</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Model has a clear structure</td>
+                        <td>Changes are difficult to implement</td>
+                    </tr>
+                    <tr>
+                        <td>Sets end goals early</td>
+                        <td>Project duration is longer</td>
+                    </tr>
+                    <tr>
+                        <td>Transmits information well</td>
+                        <td>The client may change their mind during the project</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>References</h2>
+            <p>Here is the source I used for information on the pros and cons of the Waterfall model:</p>
+            <a href="https://www.lucidchart.com/blog/pros-and-cons-of-waterfall-methodology" target="_blank" class="modelLink">Informatsioon hea ja halva külgede kohta</a>
+            <br>
+            <br>
+            <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html" target="_blank" class="modelLink">Informatsioon Waterfalli kohta</a>
+        </section>
+    </div>
 </body>
 </html>
