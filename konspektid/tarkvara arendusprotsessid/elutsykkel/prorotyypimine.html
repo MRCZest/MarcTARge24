@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prototüüpimine</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="/style.css">
     <style>
         /* Style for the "Tagasiminek" button */
         a[style="font-size: 20px;"] {
@@ -18,9 +18,23 @@
             display: inline-block;
             margin-top: 20px;
         }
-        
+
         a[style="font-size: 20px;"]:hover {
             background-color: #0056b3;
+        }
+        .modelLink {
+            font-size: 20px;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding for a bigger clickable area */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        .modelLink:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
     </style>
 </head>
@@ -38,7 +52,7 @@
             <p class="navbarItemSeperator">|</p>
             <div class="navbarItem">
                 <div class="navbarDropdown">
-                    <a href="../konspektid.html" class="navbarLinks">Konspektid</a>
+                    <a href="/konspektid/konspektid.html" class="navbarLinks">Konspektid</a>
                     <div class="navbarDropdownLinks">
                         <a href="/konspektid/tarkvara arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
                         <a href="" class="navbarDropdownLink">Riistvara</a>
@@ -54,7 +68,7 @@
     </nav>
     
     <p>
-        <a href="../elutsykkel/elutsykkel.index.html" style="font-size: 20px;">Tagasiminek</a>
+        <a href="/konspektid/tarkvara arendusprotsessid/elutsykkel/elutsykkel.index.html" class="modelLink">Tagasiminek</a>
         <h1>Prototüüpimine</h1>
         <p>Prototüüp on süsteemi algne versioon, mida kasutatakse disaini võimaluste katsetamiseks ja ideede demonstreerimiseks. Prototüüpe saab kasutada erinevates arenduse faasides. Näiteks nõuete analüüsi etapis nende leidmiseks ja valideerimiseks, disaini etapis valikuvõimaluste uurimiseks ning kasutajaliidese kavandamiseks.</p>
         <h2>Tegevuste käik</h2>
@@ -72,7 +86,7 @@
                 <p>Prototüüp iteratiivsel viisil parandatakse, kuni see rahuldab kasutajat. Samuti saab arendaja uusi teadmisi kliendi soovide kohta.</p>
             </li>
         </ul>
-        <img src="../pildid/prototyypimine.jpeg" alt="Prototüüpimise protsess" style="width: 800px; height: auto;">
+        <img src="/pildid/prototyypimine.jpeg" alt="Prototüüpimise protsess" style="width: 800px; height: auto;">
         
         <table border="1" cellpadding="8">
             <thead>

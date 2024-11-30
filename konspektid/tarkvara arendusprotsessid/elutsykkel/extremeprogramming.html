@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extreme Programming</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="/style.css">
     <style>
         /* Style for the "Tagasiminek" button */
         a[style="font-size: 20px;"] {
@@ -17,6 +17,20 @@
             text-decoration: none;
             display: inline-block;
             margin-top: 20px;
+        }
+        .modelLink {
+            font-size: 20px;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding for a bigger clickable area */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        .modelLink:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
     </style>
 </head>
@@ -34,7 +48,7 @@
             <p class="navbarItemSeperator">|</p>
             <div class="navbarItem">
                 <div class="navbarDropdown">
-                    <a href="../konspektid.html" class="navbarLinks">Konspektid</a>
+                    <a href="/konspektid/konspektid.html" class="navbarLinks">Konspektid</a>
                     <div class="navbarDropdownLinks">
                         <a href="/konspektid/tarkvara arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
                         <a href="casevahendid/main.html" class="navbarDropdownLink">Riistvara</a>
@@ -50,7 +64,7 @@
     </nav>
 
     <p>
-        <a href="../elutsykkel/elutsykkel.index.html" style="font-size: 20px;">Tagasiminek</a>
+        <a href="/konspektid/tarkvara arendusprotsessid/elutsykkel/elutsykkel.index.html" class="modelLink">Tagasiminek</a>
         <h1>Extreme Programming (XP)</h1>
         <p>Extreme Programming (XP) on üks tähtsamaid Agiilsete mudelite tarkvaraarendusraamistikke, mille eesmärk on parandada tarkvara kvaliteeti ja reageerida kiiremini kliendi nõudmistele. See keskendub pidevale koostööle, korduvatele arendustele ja kiirele tagasisidele.</p>
         <ul>
@@ -75,7 +89,7 @@
                 <p>Kliendilt saadav tagasiside aitab arendustiimil mõista kliendi vajadusi ja teha vajalikud muudatused.</p>
             </li>
         </ul>
-        <img src="../pildid/extreme_programming.jpg" alt="Extreme Programming">
+        <img src="/pildid/extreme_programming.jpg" alt="Extreme Programming">
         <table>
             <thead>
                 <tr>
