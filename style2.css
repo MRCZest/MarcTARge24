@@ -1,0 +1,209 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #0078d4;
+    color: #fff;
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d4;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbarContainer {
+    font-size: 1.2em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar a, .navbar span {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover, .navbar span:hover {
+    color: #f4f4f9;
+}
+
+/* Dropdown Menu */
+.navbar li {
+    position: relative;
+}
+
+.navbarDropdown {
+    position: relative;
+}
+
+.navbarLinks {
+    display: block;
+    padding: 10px 15px;
+    background-color: #0078d4;
+    border-radius: 4px;
+}
+
+.navbarDropdownLinks {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%; /* Align below the parent menu item */
+    left: 0;
+    background-color: #0056a3;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.navbarDropdownLinks a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 0.9em;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbarDropdownLinks a:hover {
+    background-color: #004080;
+}
+
+/* Show dropdown on hover */
+.navbarDropdown:hover .navbarDropdownLinks {
+    display: block;
+}
+
+/* Main Content */
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.columnLeft, .columnRight {
+    flex: 1;
+}
+
+.mainContent {
+    flex: 2;
+}
+
+.headlineLink h1 {
+    font-size: 2.5em;
+    color: #0078d4;
+}
+
+.mainButtonTable {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mainButton {
+    padding: 15px 30px;
+    background-color: #0078d4;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.mainButton:hover {
+    background-color: #0056a3;
+}
+
+.footer {
+    background-color: #0078d4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.modelLinks ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.modelLinks li {
+    margin: 8px 0;
+}
+
+.modelLink {
+    text-decoration: none;
+    color: #0078d4;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.modelLink:hover {
+    color: #0056a3;
+}
+
+.case-tools-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+.case-tools-list li {
+    margin-bottom: 15px;
+}
+
+.case-link {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.case-link:hover {
+    text-decoration: underline;
+}
+
+.case-description {
+    display: block;
+    font-size: 0.95rem;
+    margin-top: 5px;
+    color: #555;
+}
+
+.mainButton {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
