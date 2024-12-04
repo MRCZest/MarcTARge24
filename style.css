@@ -1,209 +1,256 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
 
-h1 {
-    text-align: center;
-    padding: 20px;
-    background-color: #0078d4;
-    color: #fff;
-    margin: 0;
-    font-size: 2em;
-}
+        /* Simple styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-/* Navigation Menu */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0078d4;
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .navbar {
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.navbarContainer {
-    font-size: 1.2em;
-}
+        .navbarContainer a.nimi {
+            font-size: 1.5rem;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        .navbarMenu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.navbar li {
-    position: relative;
-    margin: 0 15px;
-}
+        .navbarItem {
+            margin: 0 10px;
+        }
 
-.navbar a, .navbar span {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
+        .navbarLinks {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
 
-.navbar a:hover, .navbar span:hover {
-    color: #f4f4f9;
-}
+        .navbarLinks:hover {
+            color: #333;
+        }
 
-/* Dropdown Menu */
-.navbar li {
-    position: relative;
-}
+        .navbarItemSeperator {
+            color: #ecf0f1;
+        }
 
-.navbarDropdown {
-    position: relative;
-}
+        .navbarDropdown {
+            position: relative;
+        }
+        
+        .navbarDropdownLinks {
+            display: none; /* Initially hidden */
+            position: absolute;
+            top: 100%; /* Positioned below the parent */
+            left: 0;
+            background-color: #34495e;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 100; /* Ensures it's above other elements */
+        }
+        
+        .navbarDropdown:hover .navbarDropdownLinks,
+        .navbarDropdownLinks:hover {
+            display: block; /* Show dropdown on hover of parent or links */
+        }
+        
+        .navbarDropdownLink {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        
+        .navbarDropdownLink:hover {
+            background-color: #333 ;
+        }
 
-.navbarLinks {
-    display: block;
-    padding: 10px 15px;
-    background-color: #0078d4;
-    border-radius: 4px;
-}
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
 
-.navbarDropdownLinks {
-    display: none; /* Hide the dropdown by default */
-    position: absolute;
-    top: 100%; /* Align below the parent menu item */
-    left: 0;
-    background-color: #0056a3;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-}
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.navbarDropdownLinks a {
-    display: block;
-    padding: 10px 15px;
-    color: #fff;
-    font-size: 0.9em;
-    white-space: nowrap;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
+        table th, table td {
+            padding: 10px;
+            text-align: center;
+        }
 
-.navbarDropdownLinks a:hover {
-    background-color: #004080;
-}
+        table img {
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-/* Show dropdown on hover */
-.navbarDropdown:hover .navbarDropdownLinks {
-    display: block;
-}
+        table a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
 
-/* Main Content */
-.main {
-    padding: 20px;
-    text-align: center;
-}
+        table a:hover {
+            color: #1abc9c;
+        }
 
-.mainContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.columnLeft, .columnRight {
-    flex: 1;
-}
-
-.mainContent {
-    flex: 2;
-}
-
-.headlineLink h1 {
-    font-size: 2.5em;
-    color: #0078d4;
-}
-
-.mainButtonTable {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.mainButton {
-    padding: 15px 30px;
-    background-color: #0078d4;
-    color: #fff;
-    font-size: 1.2em;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.mainButton:hover {
-    background-color: #0056a3;
-}
-
-.footer {
-    background-color: #0078d4;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.modelLinks ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.modelLinks li {
-    margin: 8px 0;
-}
-
-.modelLink {
-    text-decoration: none;
-    color: #0078d4;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-.modelLink:hover {
-    color: #0056a3;
-}
-
-.case-tools-list {
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 1rem;
-}
-
-.case-tools-list li {
-    margin-bottom: 15px;
-}
-
-.case-link {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.case-link:hover {
-    text-decoration: underline;
-}
-
-.case-description {
-    display: block;
-    font-size: 0.95rem;
-    margin-top: 5px;
-    color: #555;
-}
-
-.mainButton {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-  }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+        .mainButtonTable {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            margin-top: 20px; /* Add some spacing above */
+        }
+        
+        .mainButton {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #333; /* Button background color */
+            color: #fff; /* Button text color */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.2rem; /* Adjust font size */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+        }
+        
+        .mainButton:hover {
+            background-color: #333; /* Darker green on hover */
+            transform: translateY(-3px); /* Slight lift on hover */
+        }
+        
+        .mainButton:active {
+            background-color: #333; /* Even darker green when clicked */
+            transform: translateY(1px); /* Button presses down slightly */
+        }
+        
+        .mainContent {
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .contentDescription {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .modelLinks ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        
+        .modelLinks li {
+            margin: 10px 0;
+        }
+        
+        .modelLink {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333; /* Light green background */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modelLink:hover {
+            background-color: #333; /* Darker green on hover */
+            transform: translateY(-3px);
+        }
+        
+        .modelLink:active {
+            background-color: #333; /* Even darker green when clicked */
+            transform: translateY(1px);
+        }
+        
+        .backLink {
+            margin-top: 20px;
+        }
+        
+        .infoTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .infoTable thead {
+            background-color: #333; /* Light green header */
+            color: white;
+        }
+        
+        .infoTable th, .infoTable td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .infoTable tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Light gray for even rows */
+        }
+        
+        .infoTable tbody tr:nth-child(odd) {
+            background-color: #ffffff; /* White for odd rows */
+        }
+        
+        .infoTable img {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .githubLink a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .githubLink a:hover {
+            color: #333; /* Darker green on hover */
+        }
+        
+        .centeredTitle {
+            text-align: center; /* Centers text horizontally */
+            margin: 20px auto; /* Adds spacing around the title */
+            font-size: 2rem; /* Adjusts font size */
+            color: #333; /* Sets text color */
+        }
+        
