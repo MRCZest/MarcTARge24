@@ -153,10 +153,13 @@
         }
         
         .mainContent {
-            text-align: center;
+            text-align: left;
             margin: 20px;
         }
-        
+
+        .mainContentPicture {
+            text-align: center;
+        }
         .contentDescription {
             font-size: 1.2rem;
             color: #555;
@@ -254,3 +257,9 @@
             color: #333; /* Sets text color */
         }
         
+        .BitcoinMain {
+            font: arial;
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: larger;
+        }
