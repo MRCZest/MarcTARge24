@@ -264,3 +264,40 @@
             padding-right: 100px;
             font-size: larger;
         }
+
+        .AndmebaasMain {
+            font: arial;
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: larger;
+
+        }
+
+        .AndmebaasiRepo {
+            font: arial;
+            text-align: right;
+        }
+
+        .container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* reguleeri vastavalt vajadusele */
+}
+
+.custom-button {
+    position:right;
+    bottom: 20px;
+    right: 50px;
+    padding: 10px 50px;
+    background-color: #4CAF50; /* roheline */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:hover {
+    background-color: #45a049; /* tumedam roheline */
+}
